@@ -1,0 +1,17 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'LuckySanbox_Example' do
+  pod 'LuckySanbox', :path => '../'
+
+  pod 'LuckyPop', :git => 'https://github.com/JunkyTang/LuckyPop.git', :tag => "2.1.0"
+  pod 'LuckyIB', :git => 'https://github.com/JunkyTang/LuckyIB.git', :tag => "1.3.0"
+  pod 'LuckyPropertyWrapper', :git => 'https://github.com/JunkyTang/LuckyPropertyWrapper.git', :tag => "0.1.0"
+  
+  target 'LuckySanbox_Tests' do
+    inherit! :search_paths
+    
+    
+  end
+end
