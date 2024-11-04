@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  LuckySanbox
 //
-//  Created by 汤俊杰 on 10/12/2024.
-//  Copyright (c) 2024 汤俊杰. All rights reserved.
+//  Created by Lucky on 10/12/2024.
+//  Copyright (c) 2024 Lucky. All rights reserved.
 //
 
 import UIKit

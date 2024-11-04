@@ -1,23 +1,23 @@
 PODS:
   - LuckyIB (1.3.0)
-  - LuckyPop (2.1.0):
+  - LuckyPop (3.1.0):
     - SnapKit
-  - LuckyPropertyWrapper (0.1.0)
-  - LuckySanbox (0.1.0):
-    - LuckySanbox/Core (= 0.1.0)
-    - LuckySanbox/Interface (= 0.1.0)
-  - LuckySanbox/Core (0.1.0)
-  - LuckySanbox/Interface (0.1.0):
-    - LuckyIB
-    - LuckyPop
-    - LuckyPropertyWrapper
+  - LuckyPropertyWrapper (0.1.1)
+  - LuckySanbox (0.2.1):
+    - LuckySanbox/Core (= 0.2.1)
+    - LuckySanbox/Interface (= 0.2.1)
+  - LuckySanbox/Core (0.2.1)
+  - LuckySanbox/Interface (0.2.1):
+    - LuckyIB (~> 1.3)
+    - LuckyPop (~> 3.1)
+    - LuckyPropertyWrapper (~> 0.1)
     - LuckySanbox/Core
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
-  - LuckyIB (from `https://github.com/JunkyTang/LuckyIB.git`, tag `1.3.0`)
-  - LuckyPop (from `https://github.com/JunkyTang/LuckyPop.git`, tag `2.1.0`)
-  - LuckyPropertyWrapper (from `https://github.com/JunkyTang/LuckyPropertyWrapper.git`, tag `0.1.0`)
+  - LuckyIB (from `https://github.com/JunkyTang/LuckyIB.git`)
+  - LuckyPop (from `https://github.com/JunkyTang/LuckyPop.git`)
+  - LuckyPropertyWrapper (from `https://github.com/JunkyTang/LuckyPropertyWrapper.git`)
   - LuckySanbox (from `../`)
 
 SPEC REPOS:
@@ -27,34 +27,31 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   LuckyIB:
     :git: https://github.com/JunkyTang/LuckyIB.git
-    :tag: 1.3.0
   LuckyPop:
     :git: https://github.com/JunkyTang/LuckyPop.git
-    :tag: 2.1.0
   LuckyPropertyWrapper:
     :git: https://github.com/JunkyTang/LuckyPropertyWrapper.git
-    :tag: 0.1.0
   LuckySanbox:
     :path: "../"
 
 CHECKOUT OPTIONS:
   LuckyIB:
+    :commit: 595c024376c18fb4bea781fec8f222d2706b4a85
     :git: https://github.com/JunkyTang/LuckyIB.git
-    :tag: 1.3.0
   LuckyPop:
+    :commit: e09c886cf5be16cdc7534f0b10bc23c729d80bfb
     :git: https://github.com/JunkyTang/LuckyPop.git
-    :tag: 2.1.0
   LuckyPropertyWrapper:
+    :commit: b6809ad0f62abda3b33f22bb74d6a65d494d9cf1
     :git: https://github.com/JunkyTang/LuckyPropertyWrapper.git
-    :tag: 0.1.0
 
 SPEC CHECKSUMS:
   LuckyIB: 434b6cac47ba083499842f31947a5e37609c2b39
-  LuckyPop: 463eab7e2a81bd68f464f41dc3f23fd3c8970f68
-  LuckyPropertyWrapper: 96057c1f2ba97ac873174992c08c3af8fd195cbc
-  LuckySanbox: 3b32c15b14e43313f4c2956e1f54d081dd5f7244
+  LuckyPop: 6b3aa09fb8507d964b8401948c68be7c95bd1620
+  LuckyPropertyWrapper: dc2dd041c12f03c0331800fd4dbbd1d97abffeb1
+  LuckySanbox: ded0b38019756c6a6797e2d8f7f01d5074a41461
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 71dbf52af8e904dc2c14b6d97a5e0844a95670ed
+PODFILE CHECKSUM: 987a4675181421e54b061afc9b4c8210a6218ae8
 
 COCOAPODS: 1.15.2

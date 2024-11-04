@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LuckySanbox'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'A short description of LuckySanbox.'
 
 # This description is used to generate tags and improve search results.
@@ -40,9 +40,9 @@ TODO: Add long description of the pod here.
   s.subspec "Interface" do |interface|
       interface.source_files = 'LuckySanbox/Classes/Interface/**/*'
       interface.dependency 'LuckySanbox/Core'
-      interface.dependency 'LuckyPop'
-      interface.dependency 'LuckyIB'
-      interface.dependency 'LuckyPropertyWrapper'
+      interface.dependency 'LuckyPop' , "~> 3.1"
+      interface.dependency 'LuckyIB' , '~> 1.3'
+      interface.dependency 'LuckyPropertyWrapper' , '~> 0.1'
   end
   
   

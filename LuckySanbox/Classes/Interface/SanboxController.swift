@@ -45,8 +45,9 @@ public class SanboxController: UIViewController {
     
     var funcForGetTargetFile: ((Sanbox.File) -> Void)?
     
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nil, bundle: Bundle(for: Self.self))
+    public init(file: Sanbox.File = .init(directory: .home)) {
+        self.file = file
+        super.init(nibName: "SanboxController", bundle: Bundle(for: SanboxController.self))
     }
     
     required init?(coder: NSCoder) {
@@ -137,7 +138,7 @@ extension SanboxController: UITableViewDelegate, UITableViewDataSource {
         
         let menu = SanboxMenuView.loadFromXib()
         menu.file = file
-        menu.show()
+        menu.showPopView(in: view)
     }
     
 }

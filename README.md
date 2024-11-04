@@ -1,6 +1,6 @@
 # LuckySanbox
 
-[![CI Status](https://img.shields.io/travis/汤俊杰/LuckySanbox.svg?style=flat)](https://travis-ci.org/汤俊杰/LuckySanbox)
+[![CI Status](https://img.shields.io/travis/JunkyTang/LuckySanbox.svg?style=flat)](https://travis-ci.org/JunkyTang/LuckySanbox)
 [![Version](https://img.shields.io/cocoapods/v/LuckySanbox.svg?style=flat)](https://cocoapods.org/pods/LuckySanbox)
 [![License](https://img.shields.io/cocoapods/l/LuckySanbox.svg?style=flat)](https://cocoapods.org/pods/LuckySanbox)
 [![Platform](https://img.shields.io/cocoapods/p/LuckySanbox.svg?style=flat)](https://cocoapods.org/pods/LuckySanbox)
@@ -18,6 +18,8 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'LuckySanbox'
+pod 'LuckySanbox/Core'
+pod 'LuckySanbox/Interface'
 ```
 
 ## Author
