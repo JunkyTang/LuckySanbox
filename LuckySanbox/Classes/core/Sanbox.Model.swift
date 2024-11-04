@@ -36,7 +36,7 @@ public extension Sanbox {
             return result
         }
         
-        static func fromUrl(url: URL?) -> Directory? {
+        public static func fromUrl(url: URL?) -> Directory? {
             guard let url = url else { return nil }
             
             let list: [Directory] = [.cache, .temp, .library, .document, .home]

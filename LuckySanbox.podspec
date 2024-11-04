@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LuckySanbox'
-  s.version          = '0.1.0'
+  s.version          = '0.2.1'
   s.summary          = 'A short description of LuckySanbox.'
 
 # This description is used to generate tags and improve search results.
@@ -33,14 +33,18 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LuckySanbox/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LuckySanbox' => ['LuckySanbox/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'LuckyPop'
-  s.dependency 'LuckyIB'
-  s.dependency 'LuckyPropertyWrapper'
+  s.subspec "Core" do |core|
+      core.source_files = 'LuckySanbox/Classes/Core/**/*'
+  end
+  
+  s.subspec "Interface" do |interface|
+      interface.source_files = 'LuckySanbox/Classes/Interface/**/*'
+      interface.dependency 'LuckySanbox/Core'
+      interface.dependency 'LuckyPop'
+      interface.dependency 'LuckyIB'
+      interface.dependency 'LuckyPropertyWrapper'
+  end
+  
+  
   
 end

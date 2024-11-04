@@ -7,13 +7,13 @@
 
 import Foundation
 
-extension Sanbox {
+public extension Sanbox {
     
     
     struct ExceptionHandler {
         
         
-        static func hander(_ throwable: () throws -> Void) {
+        public static func hander(_ throwable: () throws -> Void) {
             do {
                 try throwable()
             } catch {
@@ -29,9 +29,9 @@ extension Sanbox {
     
     struct Exception: Error {
         
-        var msg: String
+        public private(set) var msg: String
         
-        init(msg: String) {
+        public init(msg: String) {
             self.msg = msg
         }
     }

@@ -4,9 +4,14 @@ PODS:
     - SnapKit
   - LuckyPropertyWrapper (0.1.0)
   - LuckySanbox (0.1.0):
+    - LuckySanbox/Core (= 0.1.0)
+    - LuckySanbox/Interface (= 0.1.0)
+  - LuckySanbox/Core (0.1.0)
+  - LuckySanbox/Interface (0.1.0):
     - LuckyIB
     - LuckyPop
     - LuckyPropertyWrapper
+    - LuckySanbox/Core
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
@@ -47,7 +52,7 @@ SPEC CHECKSUMS:
   LuckyIB: 434b6cac47ba083499842f31947a5e37609c2b39
   LuckyPop: 463eab7e2a81bd68f464f41dc3f23fd3c8970f68
   LuckyPropertyWrapper: 96057c1f2ba97ac873174992c08c3af8fd195cbc
-  LuckySanbox: 6513468ac8730b8a734262f4e8bd9f2f7c5c3d31
+  LuckySanbox: 3b32c15b14e43313f4c2956e1f54d081dd5f7244
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
 PODFILE CHECKSUM: 71dbf52af8e904dc2c14b6d97a5e0844a95670ed
